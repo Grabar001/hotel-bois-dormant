@@ -1,0 +1,50 @@
+@import url(reset.css);
+@import url(variables.css);
+@import url(nav.css);
+@import url(footer.css);
+
+@font-face {
+    font-family: 'space_grotesklight';
+    src: url('../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff2')format('woff2'),
+         url('../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body{
+    font-size: 16px;
+    font-family: var(--font-family);
+
+}
+
+.main{
+    padding: 64px;
+}
+
+.footer{
+    height: 300px;
+}
+
+.header__nav{
+    display: flex;
+}
+
+@media screen and (max-width: 1024px){
+
+    
+}
+
+@media screen and (max-width: 768px){
+    
+    .header__nav{
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .nav__list{
+        flex-direction: column;
+        text-align: center;
+    }
+}
